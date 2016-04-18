@@ -44,5 +44,5 @@ questionRespond("Do you want lettuce? (yes or no)", "lettuce");
 questionLast("Do you want guac?", "guac");
 
 // output their order
-document.write("<p>You ordered a: " + main + " with " + protein + order + " and " + last + "<p>");
+document.write("<p>You ordered a " + main + " with " + protein + order + " and " + last + "<p>");
 document.write("<p>Have a great day!<p>");
