@@ -20,9 +20,9 @@ function questionMain(questionText) {
 function questionLast(questionText) {
  var answerInput = prompt(questionText);
   if ( answerInput.toUpperCase() === "YES" ) {
-  last += "guac";
+  last += "guac.";
  } else {
-  last += "no guac"
+  last += "no guac."
  }
 }
 
