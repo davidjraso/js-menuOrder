@@ -2,6 +2,7 @@
 var order = '';
 var main = '';
 var last = '';
+var protein = '';
 
 
 // build a function to ask questions
