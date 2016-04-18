@@ -18,7 +18,11 @@ function questionMain(questionText) {
 
 function questionLast(questionText) {
  var answerInput = prompt(questionText);
-  last += answerInput;
+  if ( answerInput.toUpperCase() === "YES" ) {
+  last += "guac";
+ } else {
+  last += "no guac"
+ }
 }
 
 function questionRespond(questionText, food) {
@@ -26,17 +30,16 @@ function questionRespond(questionText, food) {
  if ( answerInput.toUpperCase() === "YES" ) {
   order += food + ' ';
  }
-  main += answerInput;
 }
 
 // call the QUESTION function with the order options
 questionMain("What do you want to order?");
 question("What protein do you want?");
-questionRespond("Do you want beans?", "beans");
-questionRespond("Do you want rice?", "rice");
-questionRespond("Do you want vegetables?", "vegetables");
-questionRespond("Do you want cheese?", "cheese");
-questionRespond("Do you want lettuce?", "lettuce");
+questionRespond("Do you want beans? (yes or no)", "beans");
+questionRespond("Do you want rice? (yes or no)", "rice");
+questionRespond("Do you want vegetables? (yes or no)", "vegetables");
+questionRespond("Do you want cheese? (yes or no)", "cheese");
+questionRespond("Do you want lettuce? (yes or no)", "lettuce");
 question("Which type of salsa do you want?");
 questionLast("Do you want guac?", "guac");
 
