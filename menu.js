@@ -6,7 +6,8 @@ var order = '';
 
 function question(questionText) {
  var answerInput = prompt(questionText);
-  order += answerInput + '';
+ //answerInput = answerInput + " "
+  order += answerInput + ' ';
 }
 
 // call the QUESTION function with the order options
